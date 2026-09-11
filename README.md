@@ -58,24 +58,6 @@ The laboratory was created with the following goals:
 The initial laboratory consists of a Windows host machine running VirtualBox and a Kali Linux virtual machine connected to a dedicated NAT Network.
 
 
-┌───────────────────────────────────┐
-│          Windows Host             │
-│                                   │
-│          VirtualBox 7.2           │
-│                 │                 │
-│                 ▼                 │
-│        ┌────────────────┐         │
-│        │   NAT Network  │         │
-│        │   10.0.0.0/24  │         │
-│        └───────┬────────┘         │
-│                │                  │
-│                ▼                  │
-│        ┌────────────────┐         │
-│        │   Kali Linux   │         │
-│        │   10.0.0.2/24  │         │
-│        └────────────────┘         │
-│                                   │
-└───────────────────────────────────┘
 🌐 Network Configuration
 📡 Intended Network Configuration
 
@@ -86,7 +68,9 @@ IPv4 Address	10.0.0.2
 Subnet Mask	255.255.255.0
 Gateway	10.0.0.1
 DNS Server	8.8.8.8
-🪜 Laboratory Setup
+
+
+## 🪜 Laboratory Setup
 
 The following steps document the configuration of the Kali Linux cybersecurity laboratory, from creating the virtual network to taking the final recovery snapshot.
 
@@ -96,8 +80,7 @@ I created a dedicated NAT Network in VirtualBox and configured its IPv4 network 
 
 This network provides the foundation for communication between the virtual machines in the laboratory.
 
-📸 Evidence
-<p align="center"> <img src="./01-nat-network.png" width="750"> </p>
+
 🔹 Step 02 — Connect Kali Linux to the NAT Network
 
 I configured the Kali Linux virtual machine to use the NAT Network option in VirtualBox rather than the standard NAT option.
